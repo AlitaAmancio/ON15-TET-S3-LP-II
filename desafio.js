@@ -49,7 +49,7 @@ function desconto(valor){
 }
 
 function cupom(valor, peças){
-    if(valor >= 800 || peças >= 10){
+    if(valor > 800 || peças > 10){
         console.log('Ganhou um cupom de 50 reais');
     }
 }
@@ -76,10 +76,10 @@ function compras(produtos){
 
 console.log('Compras da Lilit')
 compras(clienteLilit);
-// console.log('----------------')
-// console.log('Compras da Maria')
-// compras(clienteMaria);
-// console.log('----------------')
-// console.log('Compras da Joana')
-// compras(clienteJoana);
-// console.log('----------------')
+console.log('----------------')
+console.log('Compras da Maria')
+compras(clienteMaria);
+console.log('----------------')
+console.log('Compras da Joana')
+compras(clienteJoana);
+console.log('----------------')
